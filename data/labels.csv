@@ -1,0 +1,41 @@
+id,no_narration,density,format,accurate,no_placeholder,explains_why,overall_slop,notes
+d01,no,appropriate,consistent,yes,yes,yes,no,
+d02,yes,none,none,yes,yes,yes,no,no comments added in the + sections
+d03,no,appropriate,consistent,yes,yes,yes,no,
+d04,yes,none,none,yes,yes,yes,no,no comments added
+d05,yes,appropriate,consistent,yes,yes,yes,no,
+d06,no,appropriate,consistent,yes,yes,yes,yes,
+d07,no,excessive,consistent,yes,no,no,yes,commended out a loop
+d08,yes,none,none,yes,yes,no,no,no comments added
+d09,yes,appropriate,consistent,yes,yes,yes,no,
+d10,no,excessive,consistent,yes,no,yes,yes,just a restatement
+d11,no,excessive,consistent,yes,no,no,yes,"commented out query; seems like leftover ""previous code"""
+d12,yes,none,none,yes,yes,no,no,no comments added
+d13,yes,none,none,yes,yes,no,no,no comments added
+d14,yes,none,none,yes,yes,no,no,no comments added
+d15,yes,appropriate,consistent,yes,yes,no,no,
+d16,no,excessive,consistent,yes,yes,yes,yes,
+d17,yes,appropriate,consistent,yes,yes,no,no,formatting for readability
+d18,no,excessive,consistent,yes,yes,yes,yes,excessive explanation on formatting
+d19,yes,appropriate,consistent,yes,yes,no,no,
+d20,no,appropriate,consistent,yes,yes,no,no,
+d21,no,excessive,consistent,yes,yes,yes,yes,explains the obvious
+d22,yes,appropriate,consistent,yes,yes,no,no,
+d23,no,excessive,malformed,yes,no,yes,yes,too many comments and inconsistent
+d24,no,excessive,consistent,yes,no,yes,yes,too many comments for the action
+d25,no,excessive,consistent,yes,yes,no,yes,excessive for reformat
+d26,yes,appropriate,consistent,yes,yes,no,no,"good, removing sensitive info from code"
+d27,yes,appropriate,consistent,yes,yes,no,no,formatting for readability
+d28,yes,appropriate,consistent,no,yes,no,yes,will error out
+d29,yes,appropriate,consistent,yes,yes,no,no,
+d30,no,excessive,consistent,yes,yes,yes,yes,formatting and over commenting
+d31,yes,appropriate,consistent,yes,yes,no,no,
+d32,yes,appropriate,consistent,yes,yes,no,no,formatting
+d33,yes,appropriate,consistent,yes,yes,no,no,
+d34,no,excessive,consistent,yes,yes,yes,no,
+d35,yes,appropriate,consistent,yes,yes,no,no,
+d36,no,excessive,consistent,yes,yes,yes,yes,overexplain
+d37,yes,appropriate,consistent,yes,yes,no,no,
+d38,yes,appropriate,consistent,yes,yes,yes,no,
+d39,yes,appropriate,consistent,yes,yes,no,no,function clarification
+d40,yes,appropriate,consistent,yes,yes,no,no,

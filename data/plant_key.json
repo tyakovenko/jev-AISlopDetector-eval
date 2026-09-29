@@ -1,0 +1,242 @@
+{
+ "d01": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "swallowed_error",
+  "plant": "format_inconsistent"
+ },
+ "d02": {
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+  "issue": "n_plus_one",
+  "plant": null
+ },
+ "d03": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "swallowed_error",
+  "plant": "misleading"
+ },
+ "d04": {
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+  "issue": "pagination",
+  "plant": null
+ },
+ "d05": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "swallowed_error",
+  "plant": "clean_why"
+ },
+ "d06": {
+  "model": "moonshotai/kimi-k2.7-code",
+  "requested_model": "moonshotai/kimi-k2.7-code",
+  "issue": "pagination",
+  "plant": null
+ },
+ "d07": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "n_plus_one",
+  "plant": "leftover_code"
+ },
+ "d08": {
+  "model": "google/gemini-3.5-flash",
+  "requested_model": "google/gemini-3.5-flash",
+  "issue": "feat_close",
+  "plant": null
+ },
+ "d09": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "n_plus_one",
+  "plant": "clean_why"
+ },
+ "d10": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "secret",
+  "plant": "clean_why"
+ },
+ "d11": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "n_plus_one",
+  "plant": "format_malformed"
+ },
+ "d12": {
+  "model": "moonshotai/kimi-k2.7-code",
+  "requested_model": "moonshotai/kimi-k2.7-code",
+  "issue": "feat_comment",
+  "plant": null
+ },
+ "d13": {
+  "model": "moonshotai/kimi-k2.7-code",
+  "requested_model": "moonshotai/kimi-k2.7-code",
+  "issue": "swallowed_error",
+  "plant": null
+ },
+ "d14": {
+  "model": "google/gemini-3.5-flash",
+  "requested_model": "google/gemini-3.5-flash",
+  "issue": "sqli",
+  "plant": null
+ },
+ "d15": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "pagination",
+  "plant": "clean_nocomment"
+ },
+ "d16": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "pagination",
+  "plant": "misleading"
+ },
+ "d17": {
+  "model": "zai-org/GLM-5.3",
+  "requested_model": "zai-org/GLM-5.3",
+  "issue": "sqli",
+  "plant": null
+ },
+ "d18": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "sqli",
+  "plant": "clean_why"
+ },
+ "d19": {
+  "model": "zai-org/GLM-5.3",
+  "requested_model": "zai-org/GLM-5.3",
+  "issue": "feat_comment",
+  "plant": null
+ },
+ "d20": {
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+  "issue": "swallowed_error",
+  "plant": null
+ },
+ "d21": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "swallowed_error",
+  "plant": "excessive"
+ },
+ "d22": {
+  "model": "google/gemini-3.5-flash",
+  "requested_model": "google/gemini-3.5-flash",
+  "issue": "pagination",
+  "plant": null
+ },
+ "d23": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "secret",
+  "plant": "excessive"
+ },
+ "d24": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "pagination",
+  "plant": "narrating"
+ },
+ "d25": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "sqli",
+  "plant": "placeholder"
+ },
+ "d26": {
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+  "issue": "secret",
+  "plant": null
+ },
+ "d27": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "sqli",
+  "plant": "clean_nocomment"
+ },
+ "d28": {
+  "model": "google/gemini-3.5-flash",
+  "requested_model": "google/gemini-3.5-flash",
+  "issue": "n_plus_one",
+  "plant": null
+ },
+ "d29": {
+  "model": "google/gemini-3.5-flash",
+  "requested_model": "google/gemini-3.5-flash",
+  "issue": "feat_comment",
+  "plant": null
+ },
+ "d30": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "sqli",
+  "plant": "narrating"
+ },
+ "d31": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "debug_print",
+  "plant": "clean_nocomment"
+ },
+ "d32": {
+  "model": "moonshotai/kimi-k2.7-code",
+  "requested_model": "moonshotai/kimi-k2.7-code",
+  "issue": "sqli",
+  "plant": null
+ },
+ "d33": {
+  "model": "moonshotai/kimi-k2.7-code",
+  "requested_model": "moonshotai/kimi-k2.7-code",
+  "issue": "feat_filter",
+  "plant": null
+ },
+ "d34": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "pagination",
+  "plant": "clean_why"
+ },
+ "d35": {
+  "model": "zai-org/GLM-5.3",
+  "requested_model": "zai-org/GLM-5.3",
+  "issue": "secret",
+  "plant": null
+ },
+ "d36": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "n_plus_one",
+  "plant": "narrating"
+ },
+ "d37": {
+  "model": "zai-org/GLM-5.3",
+  "requested_model": "zai-org/GLM-5.3",
+  "issue": "pagination",
+  "plant": null
+ },
+ "d38": {
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+  "issue": "feat_comment",
+  "plant": null
+ },
+ "d39": {
+  "model": "handwritten",
+  "requested_model": null,
+  "issue": "pagination",
+  "plant": "format_malformed"
+ },
+ "d40": {
+  "model": "zai-org/GLM-5.3",
+  "requested_model": "zai-org/GLM-5.3",
+  "issue": "n_plus_one",
+  "plant": null
+ }
+}

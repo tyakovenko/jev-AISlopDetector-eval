@@ -55,6 +55,3 @@ build/
 .next/
 project-log.md
 .deepeval/
-data/plant_key.json
-data/raw_*.jsonl
-results/
