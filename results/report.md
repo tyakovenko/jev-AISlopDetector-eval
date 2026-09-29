@@ -28,6 +28,19 @@ n = 40 diffs, one labeler (Taya, blind). A pilot, not a benchmark.
 
 **Whole metric (JevEval score) vs 'would you flag it?':** AUC 0.86, best cut-off 0.90 (balanced accuracy 0.81).
 
+## Condition: haiku_diff_only
+
+| Question | n | Human 'good' rate | Accuracy @0.5 | Cohen's κ | AUC | Brier | Best cut-off | Flags |
+|---|---|---|---|---|---|---|---|---|
+| no_narration | 40 | 0.60 | 0.78 | 0.49 | 0.95 | 0.17 | 0.91 | best cut-off 0.91, not 0.5 |
+| density | 40 | 0.70 | 0.85 | 0.63 | 0.92 | 0.12 | 0.36 | ok |
+| format | 21 | 0.95 | 0.76 | 0.22 | 0.85 | 0.18 | 0.16 | kappa 0.22 < 0.4; best cut-off 0.16, not 0.5 |
+| accurate | 40 | 0.97 | 0.88 | -0.04 | 0.23 | 0.11 | 0.05 | kappa -0.04 < 0.4; best cut-off 0.05, not 0.5 |
+| no_placeholder | 40 | 0.88 | 0.90 | 0.45 | 0.88 | 0.09 | 0.06 | best cut-off 0.06, not 0.5 |
+| explains_why | 40 | 0.42 | 0.55 | 0.14 | 0.52 | 0.39 | 0.21 | kappa 0.14 < 0.4; Brier 0.39 > 0.25; best cut-off 0.21, not 0.5 |
+
+**Whole metric (JevEval score) vs 'would you flag it?':** AUC 0.83, best cut-off 0.71 (balanced accuracy 0.79).
+
 ## Plant check (hand-written diffs only)
 
 | id | planted | Taya overall_slop |

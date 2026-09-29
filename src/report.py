@@ -121,9 +121,14 @@ def load() -> tuple[dict, dict, dict]:
                 raise ValueError(f"{r['id']}: missing labels; label every question before running the report")
             labels[r["id"]] = r
     results = defaultdict(dict)
-    for line in (ROOT / "results" / "jev_results.jsonl").read_text().splitlines():
-        r = json.loads(line)
-        results[r["condition"]][r["id"]] = r
+    # Jev conditions plus the LLM-judge baseline, scored identically.
+    for name in ("jev_results.jsonl", "llm_results.jsonl"):
+        path = ROOT / "results" / name
+        if not path.exists():
+            continue
+        for line in path.read_text().splitlines():
+            r = json.loads(line)
+            results[r["condition"]][r["id"]] = r
     key = json.loads((ROOT / "data" / "plant_key.json").read_text())
     return labels, results, key
 

@@ -12,6 +12,8 @@ It grew out of [jevathon](https://github.com/tyakovenko/jevathon), a hackathon p
 4. **Two questions couldn't be evaluated.** The labeler marked 32 of 33 diffs as consistently formatted and 39 of 40 as accurate, so there were almost no negatives for `format` or `accurate` to catch.
 5. **Real models rarely write slop comments here.** Four models (GLM-5.3, DeepSeek-V4-Pro, Kimi-k2.7-code, Gemini-3.5-flash) fixing bugs and adding small features in this codebase added about four comment lines across 30 diffs; 2 of the 20 sampled were flagged. They mirror the file they're given, and the demo app has almost no comments.
 
+6. **Against an LLM judge (Claude Haiku 4.5, same six questions, same diffs):** Jev ranks the whole metric slightly better (AUC 0.89 vs 0.83), but Haiku's probabilities sit closer to the default gate (best cut-off 0.71 vs 0.94), so at 0.5 Haiku agrees with the labeler more often (e.g. `density` κ 0.63 vs 0.22). On the badly worded `explains_why`, Haiku lands at chance (AUC 0.52) while Jev inverts (0.25): Jev follows the literal question text, escape clause included, more closely than the LLM does. That makes wording matter even more for Jev. At n = 40 none of these differences is significant; treat them as directions to test, not results.
+
 Full tables: [`results/report.md`](results/report.md).
 
 ## The proposed JevEval addition: a question-set check
@@ -42,7 +44,7 @@ and flags questions whose labels are one-sided, whose answer never changes, whos
 - `format` and `accurate` had too few negatives to evaluate.
 - One codebase and one programming language.
 - The real-model prompts changed wording between the bug-fix and feature runs ("fixing a bug… Issue:" vs "working on… Task:").
-- No comparison against an LLM judge on the same questions yet.
+- The LLM baseline is one model (Haiku 4.5, via the Claude CLI) and one run; its probabilities are self-reported, not calibrated scores.
 
 ## Run it
 
@@ -52,5 +54,6 @@ cp .env.example .env   # TYPESAFE_API_KEY (+ GMI_* to regenerate real diffs)
 cd src
 ../venv/bin/python gen_real.py && ../venv/bin/python gen_written.py && ../venv/bin/python build_dataset.py
 ../venv/bin/python run_eval.py      # Jev, both conditions
+../venv/bin/python run_llm_judge.py # Haiku baseline via the claude CLI
 ../venv/bin/python report.py        # needs data/labels.csv
 ```
